@@ -1,0 +1,16 @@
+{{outlet}}
+
+<div class="landing">
+  {{#link-to 'display'}}<span>Main display</span>{{/link-to}}
+  {{#link-to 'selection'}}<span>Winner selection</span>{{/link-to}}
+  {{#link-to 'signin'}}<span>Sign in</span>{{/link-to}}
+  {{#link-to 'customers'}}<span>Signed in customers</span>{{/link-to}}
+  {{#link-to 'master'}}<span>Master list</span>{{/link-to}}
+  <a href="#" {{action "import"}}><span>Reset prize winners (don't press)</span></a>
+</div>
+
+<style>
+  a.back {
+    display: none;
+  }
+</style>

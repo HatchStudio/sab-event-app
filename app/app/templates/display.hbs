@@ -1,0 +1,74 @@
+{{outlet}}
+
+{{#if animate}}
+  <div id="display" class="display">
+    <img src="/assets/images/logo.png" class="display-logo"/>
+    <h1>DRAWING FOR... </h1>
+    <h2>{{prize}}</h2>
+    <div class="panels">
+      <div class="panel"><span>{{panel1}}</span></div>
+      <div class="panel"><span>{{panel2}}</span></div>
+      <div class="panel"><span>{{panel3}}</span></div>
+      <div class="panel"><span>{{panel4}}</span></div>
+      <div class="panel"><span>{{panel5}}</span></div>
+      <div class="panel"><span>{{panel6}}</span></div>
+    </div>
+  </div>
+{{/if}}
+
+{{#if show}}
+  <div id="display" class="display">
+    <img src="/assets/images/logo.png" class="display-logo"/>
+    <h1>{{prize}}</h1>
+    <h2>{{owner}}</h2>
+    <h3>{{business}}</h3>
+    <div class="panels">
+      <div class="panel"><span>{{panel1}}</span></div>
+      <div class="panel"><span>{{panel2}}</span></div>
+      <div class="panel"><span>{{panel3}}</span></div>
+      <div class="panel"><span>{{panel4}}</span></div>
+      <div class="panel"><span>{{panel5}}</span></div>
+      <div class="panel"><span>{{panel6}}</span></div>
+    </div>
+  </div>
+{{/if}}
+
+{{#if welcome}}
+  <div id="display" class="display">
+    <img src="/assets/images/logo.png" class="display-logo"/>
+    <h1>WELCOME TO THE </h1>
+    <h2>SAB EXTRAVAGANZA</h2>
+  </div>
+{{/if}}
+
+{{#if summary}}
+  <div class="summary">
+    <h1>All winners</h1>
+    <table cellspacing="0">
+      <tr>
+        <th></th>
+        <th>STP #</th>
+        <th>Business</th>
+        <th>Owner</th>
+        <th>Team</th>
+        <th>Area</th>
+        <th>Prize</th>
+        <th>Points</th>
+      </tr>
+      {{#each model as |prize|}}
+        {{#if prize.owner}}
+        <tr>
+          <td>{{fa-icon "check"}}</td>
+          <td>{{prize.stp}}</td>
+          <td>{{prize.business}}</td>
+          <td>{{prize.owner}}</td>
+          <td>{{prize.team}}</td>
+          <td>{{prize.area}}</td>
+          <td>{{prize.prize}}</td>
+          <td>{{prize.points}}</td>
+        </tr>
+        {{/if}}
+      {{/each}}
+    </table>
+  </div>
+{{/if}}

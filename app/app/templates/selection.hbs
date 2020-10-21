@@ -1,0 +1,24 @@
+{{outlet}}
+
+<div class="selection">
+  <h1>Select a winner</h1>
+  {{#if busy}}
+    <p>Busy selecting winner...</p>
+  {{/if}}
+  <button {{action "welcome"}} class="welcome-screen">{{fa-icon "desktop"}}</button>
+  <button {{action "summary"}} class="summary-screen">{{fa-icon "trophy"}}</button>
+  <table cellspacing="0">
+    {{#each model as |prize|}}
+    <tr>
+      <td>{{prize.owner}}</td>
+      <td>{{prize.business}}</td>
+      <td>{{prize.prize}}</td>
+      <td>{{prize.stp}}</td>
+      <td width="10%"><button {{action "show" prize}}>Show on screen</button></td>
+      <td width="10%"><button {{action "animate" prize}}>Animate on screen</button></td>
+      <td width="10%"><button {{action "draw" prize}}>Draw this prize</button></td>
+      <td width="10%"><button {{action "reset" prize}}>Reset this prize</button></td>
+    </tr>
+    {{/each}}
+  </table>
+</div>

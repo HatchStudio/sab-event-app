@@ -1,0 +1,31 @@
+{{outlet}}
+
+<div class="summary">
+  <h1>All customers</h1>
+  <table cellspacing="0">
+    <tr>
+      <th>STP #</th>
+      <th>Business</th>
+      <th>Owner</th>
+      <th>Points</th>
+      <th>Team</th>
+      <th>Area</th>
+      <th>Contact</th>
+      <th>Device</th>
+    </tr>
+    {{#each model as |customer|}}
+      {{#if customer.owner}}
+      <tr>
+        <td>{{customer.stp}}</td>
+        <td>{{customer.business}}</td>
+        <td>{{customer.owner}}</td>
+        <td>{{customer.points}}</td>
+        <td>{{customer.team}}</td>
+        <td>{{customer.area}}</td>
+        <td>{{customer.contact}}</td>
+        <td>{{customer.device}}</td>
+      </tr>
+      {{/if}}
+    {{/each}}
+  </table>
+</div>

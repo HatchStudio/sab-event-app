@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a.back {
+  text-transform: uppercase;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #eee;
+  text-decoration: none;
+  z-index: 10000;
+}
+
+a.back:hover {
+    color: red;
+}
+
+button.welcome-screen {
+  text-transform: uppercase;
+  position: absolute;
+  background-color: transparent;
+  outline: none;
+  top: 10px;
+  right: 20px;
+  color: #eee;
+  text-decoration: none;
+  z-index: 10000;
+  cursor: pointer;
+  border: none;
+}
+
+button.welcome-screen { font-size: 24px; }
+button.welcome-screen:hover { color: red; }
+
+button.summary-screen {
+  position: absolute;
+  background-color: transparent;
+  outline: none;
+  top: 10px;
+  right: 70px;
+  color: #eee;
+  text-decoration: none;
+  z-index: 10001;
+  cursor: pointer;
+  border: none;
+}
+
+button.summary-screen { font-size: 28px; }
+button.summary-screen:hover { color: red; }
+
+.swish {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: 50%;
+  z-index: 15;
+}
+
+.sab-logo {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  height: 70px;
+}
+
+.abinbev-logo {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  height: 50px;
+}
+
+.signin {
+  text-align: center;
+  padding-top: 50px;
+}
+
+
+.landing {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+  .landing a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background: red;
+    text-transform: uppercase;
+    margin: 1px;
+    border-radius: 5px;
+    padding: 30px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+
+  .landing a:hover {
+    opacity: 0.8;
+  }
+
+  .landing a span {
+    color: white;
+    text-decoration: none;
+  }
+
+.selection,
+.summary {
+  text-align: center;
+  padding-top: 50px;
+}
+
+  .selection h1,
+  .summary h1 {
+    text-transform: uppercase;
+    color: #E6041C;
+    font-weight: 700;
+    font-size: 35px;
+    letter-spacing: -1px;
+    margin-bottom: 35px;
+    margin-top: 5%
+}
+
+  .selection,
+  .summary {
+    overflow: scroll;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 0px;
+    background: white;
+    z-index: 10;
+  }
+
+  .selection table,
+  .summary table {
+    margin: 10%;
+    margin-top: 0px;
+    width: 80%;
+  }
+
+  .selection table tr td,
+  .summary table tr td {
+    font-size: 14px;
+    border-bottom: 2px solid #fafafa;
+    color: black;
+    text-align: left;
+    padding: 5px;
+    font-weight: 12px;
+  }
+
+  .selection table tr th,
+  .summary table tr th {
+    font-size: 14px;
+    border-bottom: 2px solid #fafafa;
+    color: black;
+    text-align: left;
+    padding: 5px;
+    text-transform: uppercase;
+  }
+
+  .selection table tr td span,
+  .summary table tr td span {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #CAA759;
+  }
+
+  .selection table td button,
+  .summary table td button {
+    padding: 10px;
+    outline: none;
+    text-align: center;
+    border: 0px;
+    font-size: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #E6041C;
+  }
+
+  .selection table td button:hover,
+  .summary table td button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  .signin .screen1 input,
+  .signin .screen2 input {
+    padding: 20px 0px 20px 0px;
+    outline: none;
+    text-align: center;
+    border: 0px;
+    border-radius: 5px;
+    width: 30%;
+    font-size: 20px;
+    border: 3px solid #fafafa;
+  }
+
+  .signin .screen1 button,
+  .signin .screen2 button {
+    margin-top: 20px;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    border: 0px;
+    font-size: 20px;
+    width: 30%;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #E6041C;
+  }
+
+  .signin .screen1 h1 {
+    text-transform: uppercase;
+    color: #E6041C;
+    font-weight: 700;
+    font-size: 35px;
+    letter-spacing: -1px;
+    margin-bottom: -15px;
+  }
+
+  .signin .screen1 h2 {
+    text-transform: uppercase;
+    color: #CAA759;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: -1px;
+  }
+
+  .signin .screen1 p,
+  .signin .screen2 p {
+    font-size: 18px;
+    font-weight: 300;
+    padding: 10px;
+  }
+
+  .signin .screen2 h1 {
+    text-transform: uppercase;
+    color: #E6041C;
+    font-weight: 300;
+    font-size: 35px;
+    letter-spacing: -1px;
+    margin-bottom: 0px;
+  }
+
+  .signin .screen2 h1 strong {
+    font-weight: 700;
+  }
+
+  .signin .screen2 h2 {
+    text-transform: uppercase;
+    color: #CAA759;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: -1px;
+  }
+
+  .signin .screen2 p {
+    font-size: 20px;
+  }
+
+  .signin .signin-logo {
+    height: 300px;
+  }
+
+  .display {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .display h1 {
+    text-transform: uppercase;
+    color: #E6041C;
+    font-weight: 700;
+    font-size: 35px;
+    letter-spacing: -1px;
+    margin-bottom: -15px;
+  }
+
+  .display h2 {
+    text-transform: uppercase;
+    color: black;
+    font-weight: 300;
+    font-size: 40px;
+    letter-spacing: -1px;
+  }
+
+    .display h2 strong {
+      font-weight: 700;
+    }
+
+  .display .display-logo {
+    height: 300px;
+  }
+
+  .display .panels {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .display .panels .panel {
+    border-radius: 3px;
+    background-color: #E6041C;
+    margin: 3px;
+    flex-grow: 1;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .display .panels .panel span {
+    color: white;
+    font-size: 100px;
+    font-weight: 700;
+  }

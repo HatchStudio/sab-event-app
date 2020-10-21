@@ -1,0 +1,31 @@
+{{outlet}}
+
+<div class="signin">
+  <img src="/assets/images/logo.png" class="signin-logo"/>
+
+  {{#if signedIn}}
+
+    <div id="screen2" class="screen2">
+      <h1><strong>{{owner}}</strong>, {{business}}</h1>
+      <h2>{{points}} Points</h2>
+      <p>Please enter the mobile device before entry!</p>
+      <p>{{input valueBinding="device"}}</p>
+      <p><button {{action "enter"}}>Enter</button></p>
+    </div>
+
+  {{else}}
+
+    <div id="screen1" class="screen1">
+      <h1>SAB Price It Right</h1>
+      <h2>Extravaganza</h2>
+      <p>Please enter the STP, business name or owner name to search</p>
+      <p>{{input valueBinding="search"}}</p>
+      <p><button {{action "search"}}>Search</button></p>
+    </div>
+
+  {{/if}}
+
+  {{#if busySaving}}
+    <span>Processing...</span>
+  {{/if}}
+</div>
